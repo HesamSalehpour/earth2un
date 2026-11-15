@@ -8,7 +8,6 @@ An interactive, real-time sonification experience that transforms Earth's visual
 <p align="center">
   <img src="https://img.shields.io/badge/NASA%20Space%20Apps-2026-0B3D91?style=for-the-badge&logo=nasa&logoColor=white" alt="NASA Space Apps 2026"/>
   <img src="https://img.shields.io/badge/Status-Live-00C853?style=for-the-badge" alt="Live"/>
-  <img src="https://img.shields.io/badge/Built%20with-Lovable%20AI-FF6B6B?style=for-the-badge" alt="Built with Lovable"/>
   <img src="https://img.shields.io/badge/Technology-Web%20Audio%20API-6C63FF?style=for-the-badge" alt="Web Audio API"/>
 </p>
 
@@ -168,9 +167,9 @@ Users can follow the visual scan, observe changing audio parameters, and experie
 │                                              │
 │  • Mode-Specific Mapping Functions           │
 │  • Frequency Modulation                      │
-│  • Amplitude Control                          │
-│  • Harmonic Variation                         │
-│  • Smooth Audio Transitions                   │
+│  • Amplitude Control                         │
+│  • Harmonic Variation                        │
+│  • Smooth Audio Transitions                  │
 └──────────────────────┬───────────────────────┘
                        │
                        ▼
