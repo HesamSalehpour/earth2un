@@ -45,7 +45,7 @@ button,input,a { -webkit-tap-highlight-color: transparent; } button:focus-visibl
 .card-category, .card-duration { font-size: 9px; }
 .own-frame h3 { font-size: 18px; }
 .own-frame p { font-size: 12px; }
-.info-modal { display: block; width: calc(100% - 40px); }
+.info-modal { position: fixed; display: block; width: calc(100% - 40px); }
 .info-modal h2 { line-height: 1.25; }
 @media(max-width:1000px) {
  .listening-room { gap: 24px; grid-template-columns: 1.1fr 1fr; }
