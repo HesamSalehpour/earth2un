@@ -32,3 +32,5 @@ use the editor.
 ## Application architecture
 - Keep sonification in browser Web Audio and map original image pixels through the pure sonification module; no paid API or server processing is required.
 - Render the Earth texture with a 2D canvas sphere projection, not a 3D dependency; the visualization and audio share the playback longitude.
+
+- Use the existing Radix dialog for informational and settings overlays so focus trapping and Escape dismissal remain accessible.
