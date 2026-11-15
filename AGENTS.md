@@ -28,3 +28,7 @@ use the editor.
   own key and store it in Secrets.
 - **Secrets.** Lovable manages them. Do not put secret values in the repo.
 <!-- LOVABLE:END -->
+
+## Application architecture
+- Keep sonification in browser Web Audio and map original image pixels through the pure sonification module; no paid API or server processing is required.
+- Render the Earth texture with a 2D canvas sphere projection, not a 3D dependency; the visualization and audio share the playback longitude.
