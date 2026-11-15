@@ -15,7 +15,7 @@ const tracks = [
   { id: 'ocean' as const, number: '01', title: 'The blue planet', category: 'OCEAN & WATER', icon: Waves, description: 'Follow the rhythm of Earth’s oceans.', mapping: 'Blue relative to red → pitch', color: 'ocean', duration: '01:00' },
   { id: 'land' as const, number: '02', title: 'A living Earth', category: 'LAND & VEGETATION', icon: Leaf, description: 'Listen to the green pulse of our planet.', mapping: 'Green relative to blue → pitch', color: 'land', duration: '01:00' },
   { id: 'ice' as const, number: '03', title: 'Frozen harmonies', category: 'ICE & BRIGHTNESS', icon: Snowflake, description: 'Discover the delicate tones of brighter regions.', mapping: 'Pixel brightness → pitch', color: 'ice', duration: '01:00' },
-];
+] as const;
 
 function Index() {
   const [mode, setMode] = useState<SoundMode>('ocean');

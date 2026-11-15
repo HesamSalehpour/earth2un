@@ -34,14 +34,14 @@ export function EarthStage({ imageUrl, position, mode, onSample }: { imageUrl: s
         const sy = Math.min(511, Math.floor((Math.asin(ny) / Math.PI + .5) * 512));
         const a = (sy * 1024 + sx) * 4, b = (y * size + x) * 4;
         const light = .25 + .75 * Math.max(0, -.35 * nx - .35 * ny + .86 * nz);
-        output.data[b] = input.data[a] * light;
-        output.data[b + 1] = input.data[a + 1] * light;
-        output.data[b + 2] = input.data[a + 2] * light;
+        output.data[b] = (input.data[a] ?? 0) * light;
+        output.data[b + 1] = (input.data[a + 1] ?? 0) * light;
+        output.data[b + 2] = (input.data[a + 2] ?? 0) * light;
         output.data[b + 3] = 255;
       }
       ctx.putImageData(output, 0, 0);
       const point = (256 * 1024 + Math.floor(((.5 + position / 100) % 1) * 1024)) * 4;
-      sampleRef.current(input.data[point], input.data[point + 1], input.data[point + 2]);
+      sampleRef.current(input.data[point] ?? 0, input.data[point + 1] ?? 0, input.data[point + 2] ?? 0);
     }
     draw();
     return () => { image.onload = null; };
